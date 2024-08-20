@@ -68,16 +68,16 @@ const Manager = () => {
                     <p className='text-sm ml-10'>Your own password manager app</p>
                 </div>
                 <div className="flex flex-col gap-5 items-center pt-5 mt-5">
-                    <input className='w-1/4 px-4 rounded h-8 ' type="email" value={form.site} placeholder='Your webiste Url'
+                    <input className='sm:w-1/4 px-4 rounded h-8 ' type="email" value={form.site} placeholder='Your webiste Url'
                         onChange={handleChange}
                         name='site'
                     />
-                    <input className='w-1/4 px-4 rounded h-8 ' type="text" value={form.username} placeholder='Enter your Name'
+                    <input className='sm:w-1/4 px-4 rounded  h-8 ' type="text" value={form.username} placeholder='Enter your Name'
                         onChange={handleChange}
                         name='username'
                     />
                     <div className="relative flex justify-center items-center">
-                        <input className='w-[380px] px-4 rounded h-8' type="password" value={form.password} placeholder='Enter your Password'
+                        <input className='lg:w-[380px] sm:w-2/4 px-4 rounded h-8' type="password" value={form.password} placeholder='Enter your Password'
                             onChange={handleChange}
                             name='password'
                             ref={passwordRef}
